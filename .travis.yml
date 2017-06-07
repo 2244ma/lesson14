@@ -4,3 +4,4 @@ script:
   - ./test.sh
   -echo "test same"
   -./test_test2.sh
+  -./test_test3.sh
