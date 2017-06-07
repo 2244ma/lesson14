@@ -2,3 +2,5 @@ language: generic
 script:
   - echo "test1 start"
   - ./test.sh
+  -echo "test same"
+  -./test_test2.sh
