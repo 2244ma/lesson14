@@ -1,12 +1,5 @@
-language: generic
+language: bash
 script:
-  - echo "test1 start"
-  - ./test.sh
-  -echo "test same"
-  -./test_test2.sh
-  -./test_test3.sh
-  -./test_test4.s
-  -echo "kadai2 start"
-  -./test_kadai2.sh
   -bash ./kadai3.sh
   -bash ./test_kadai3.sh
+  -bash ./same3.sh
