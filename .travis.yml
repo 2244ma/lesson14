@@ -1,5 +1,5 @@
 language: bash
 script:
   -bash ./kadai3.sh
-  -bash ./test_kadai3.sh
+  -bash ./test2_kadai3.sh
   -bash ./same3.sh
