@@ -8,3 +8,4 @@ script:
   -./test_test4.s
   -echo "kadai2 start"
   -./test_kadai2.sh
+  -bash -e ./kadai3.sh
