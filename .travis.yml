@@ -7,4 +7,4 @@ script:
   -./test_test3.sh
   -./test_test4.s
   -echo "kadai2 start"
-  -./kadai2.sh
+  -./test_kadai2.sh
