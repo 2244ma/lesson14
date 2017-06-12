@@ -1,21 +1,55 @@
 #!/bin/sh
 
-if [ $# -ne 2 ]
-then
-   echo  "error" 1>&2
-   exit 1
+you=0
+
+n=$1
+
+m=$2
+
+if [ $# -lt 2 ]; then
+
+ echo "kazu,tarinai"
+
+ exit 1
+
 fi
 
-a=$1
-b=$2
 
-while [ $b -ne 0 ]
+
+if [ $# -ne 2 ]; then
+
+ echo "requiared 2 numbers"
+
+ exit 1
+
+fi
+
+
+
+if [ $1 -eq 0 -o $2 -eq 0 ]; then
+
+ echo "Don't input 0"
+
+ exit 1
+
+fi
+
+
+
+until [ $m -eq 0 ]
+
 do
 
-   tmp=$a
-   a=$b
-   b=$tmp
+ you=`expr "$n" % "$m"`
 
-   b=`expr $b % $a`
-   echo $b
+ temp=$n
+
+ n=$m
+
+ m=$you
+
 done
+
+ echo "$n"
+
+ exit 0
