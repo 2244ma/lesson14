@@ -21,3 +21,10 @@ echo "Don't input > $tmp-ans
 diff $tmp-ans $tmp-err || ERROR_EXIT "0 correct?"
 
 echo "TEST2 sucess"
+
+
+echo " 2 > $tmp-ans
+./kadai3.sh 2 10 > $tmp-err || ERROR_EXIT "exe error"
+diff $tmp-ans $tmp-err || ERROR_EXIT "0 correct?"
+
+echo "TEST3 sucess"
